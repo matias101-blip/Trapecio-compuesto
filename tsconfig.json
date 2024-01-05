@@ -1,0 +1,6 @@
+{
+  "compilerOptions": {
+    "outDir": "./static/script",
+    "rootDir": "./ts"
+  }
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles/normalize.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles/skeleton.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles/index.css') }}">
+  <title>Regla del trapecio compuesto</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="head">
+      <h1 id="titulo">Regla del trapecio compuesto</h1>
+    </div>
+    <div class="formulario">
+      <div class="entrada valor_a">
+        <label for="a_valor">valor de a: </label>
+        <input type="number" name="valor de a" id="a_valor" placeholder="Ingrese el valor de a">
+      </div>
+      <div class="entrada valor_b">
+        <label for="b_valor">valor de b: </label>
+        <input type="number" name="valor de b" id="b_valor" placeholder="Ingrese el valor de b">
+      </div>
+      <div class="entrada n_trapecio">
+        <label for="n_valor">Numero de trapecios: </label>
+        <input type="number" name="valor de numero de trapecios" id="n_valor" placeholder="Ingrese el numero de trapecios">
+      </div>
+      <div class="entrada f_x">
+        <label for="fx_valor">f(x): </label>
+        <input type="text" name="fuccion a integrar" placeholder="Ingrese la funccion" id="fx_valor">
+      </div>
+    </div>
+    <div class="botones">
+      <button onclick="Obtener_datos()" type="button" name="button">Integrar o aplicar</button>
+    </div>
+    <div class="Resultados">
+      <label>La aproximacion es: <span id="resultado"></span></label>
+    </div>
+  </div>
+
+  <script src="{{ url_for('static', filename='script/index.js') }}" charset="utf-8"></script>
+</body>
+
+</html>
